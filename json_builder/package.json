@@ -1,0 +1,15 @@
+{
+  "name": "json_builder",
+  "version": "1.0.0",
+  "description": "For creation of static country JSON files",
+  "main": "countries.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dwayne Brick",
+  "license": "ISC",
+  "dependencies": {
+    "lodash.where": "^3.1.0",
+    "node-fetch": "^2.6.1"
+  }
+}

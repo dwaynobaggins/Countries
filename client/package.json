@@ -1,0 +1,19 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "description": "Creating the Front End client",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src --out-file public/bundle.js --source-maps",
+    "serve": "http-server public --port 5555"
+  },
+  "author": "Dwayne Brick",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "babel-preset-minify": "^0.5.1",
+    "http-server": "^0.12.3"
+  }
+}

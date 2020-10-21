@@ -1,0 +1,66 @@
+body {
+    padding: 100px;
+    margin: 0;    
+    /* background-color: red; */
+    background-image: url(../images/dark_Tire.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inputForm {
+    width: 600px;
+    text-align: center;
+}
+
+.inputForm label {
+    font-size: xx-large;
+    color: white;
+    display: block;
+}
+
+.inputForm input[type=text] {
+    width: 100%;
+    text-align: center;
+    font-size: xx-large;
+    display: block;
+    border: 2px solid black;
+    margin: 12px auto;
+}
+
+.inputForm input[type=submit] {
+    text-align: center;
+    font-size: xx-large;
+    display: block;
+    margin: 12px auto;
+}
+
+.error_message {
+    display: none;
+    font-size: xx-large;
+    color: red;   
+}
+
+.is_in_error_state {
+    display: block;
+}
+
+.results {
+    display: none;
+    min-width: 600px;
+    margin: 0;
+    padding: 0;
+    border: 1px dashed white;
+}
+
+.results li {
+    color: white;
+    list-style-type: none;
+    margin: 12px 0;
+    padding: 0 12px;
+}
+
+.results_active_state {
+    display: block;
+}
