@@ -21,7 +21,6 @@ const handleFormSubmission = (event) => {
         })
         .then(json => {
             formErrorMessageElem.classList.contains(errorMessageClassName) && formErrorMessageElem.classList.remove(errorMessageClassName)
-            console.log(json);
             showResults(json.results);         
         })
         .catch((error) => {

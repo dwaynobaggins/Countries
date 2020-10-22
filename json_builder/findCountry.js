@@ -3,6 +3,7 @@
 "use strict";
 
 const fetch = require('node-fetch');
+const log = require("fancy-log");               // Make my logs a bit more helpful and pleasant to read
 const where = require("lodash.where");
 const partial = process.argv.slice(2);
 const resultsArr = [];
@@ -16,7 +17,8 @@ fetch(`https://restcountries.eu/rest/v2/name/${partial}`)
             filterForRegion(json);
         }
         else {
-            console.error("Incorrect input");
+            //console.error("Incorrect input");
+            log.error("Incorrect input");
         }
     });
 
@@ -35,14 +37,14 @@ const filterForRegion = (json) => {
     // const data = JSON.stringify({results:resultsArr}, null, 2);      // Human readable output
     const data = JSON.stringify({ results: resultsArr });
 
-    console.info('Writing file ...');
+    log.info('Writing file ...');
 
     fs.writeFile(`../client/public/data/${partial}.json`, data, (err) => {
         if (err) {
             throw err;
         }
         else {
-            console.info('File completed.');
+            log.info('File completed.');
         }
     });
 
