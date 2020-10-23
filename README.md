@@ -38,7 +38,7 @@ The frontend is ready to go once cloned, but you can update it and then run the 
      
 ## Notes on this Project
 
-The frontend is purely functional, for practicality, rather than designed. What I mean by that is that I haven't prettied up the CSS nor made the page responsive. On a site for Web deployment these things would be a must. Also if I was to build a Web deployed site I wouldnt used Babel on its own, it would be part of a build process like Webpack or Rollup. Or maybe Rome, which I've heard good things about.
+The frontend is purely functional, for practicality, rather than designed. What I mean by that is that I haven't prettied up the CSS nor made the page responsive. On a site for Web deployment these things would be a must. Also if I was to build a Web deployed site I wouldn't have used Babel on its own, it would be part of a build process like Webpack or Rollup. Or maybe Rome, which I've heard good things about.
    
-The test did not explicitly tell me to start a Web server, but Fetch wont work without using Http: or Https: for loading its resources, so I took it as implicit that i needed to create a localhost to get it to work.
+The test did not explicitly tell me to start a Web server, but Fetch wont work without using Http: or Https: for loading its resources, so I took it as implicit that I needed to create a localhost to get it to work.
 
