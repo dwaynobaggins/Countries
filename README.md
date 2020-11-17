@@ -1,4 +1,6 @@
-## Countries REST API - task description
+# Task:
+
+## Countries REST API
 
 Create a basic Node command line script which consumes the REST Countries API - http://restcountries.eu   
 Only returning countries that have the region value of "Europe".   
@@ -15,6 +17,8 @@ Then writes a JSON object to a .json file of just the Country name and Capital c
      }         
      
 Also create a basic frontend in HTML and ES6 transpiled using Babel, which will take the input country name via a text field, load the matching .json file and then return a UL list of the countries and capitals below the field. This test is designed so it shows us that you can interact with external APIs, build backend JS to process that data and also frontend JS to consume that sort of data, within our current stack.   
+
+# Solution:
 
 ## Clone this repository
 
