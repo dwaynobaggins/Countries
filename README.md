@@ -3,15 +3,17 @@
 Create a basic Node command line script which consumes the REST Countries API - http://restcountries.eu   
 Only returning countries that have the region value of "Europe".   
 Which takes the argument of a country name (or partial): Eg node yourScript.js united      
-Then writes a JSON object to a .json file of just the Country name and Capital city, with the filename of the input. Eg ./united.json   
-     `{ results: [   
+Then writes a JSON object to a .json file of just the Country name and Capital city, with the filename of the input. Eg ./united.json    
+
+     { results: [   
                {   
                     countryName: "United Kingdom",   
                     capitalCity: "London"   
                },   
                …   
           ]   
-     }`   
+     }         
+     
 Also create a basic frontend in HTML and ES6 transpiled using Babel, which will take the input country name via a text field, load the matching .json file and then return a UL list of the countries and capitals below the field. This test is designed so it shows us that you can interact with external APIs, build backend JS to process that data and also frontend JS to consume that sort of data, within our current stack.   
 
 ## Clone this repository
